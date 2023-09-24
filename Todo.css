@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}        
+
+body{
+background:#5B6370;        
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;
+background:#323641;
+width:330px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+}
+
+.container .search-box{
+padding:5px;  
+padding-left:20px;
+padding-right:10px;
+border:1px solid white;
+height:55px;
+display:flex;
+align-items:center;
+color:white; 
+border-radius:7px;
+}
+
+.container .search-box input{
+all:unset;        
+margin-left:15px;
+width:225px;
+height:50px;
+} 
+
+.container .allTodos {
+max-height:330px;       
+width:100%;
+margin-top:20px;
+}
+
+.container .allTodos .todo{
+padding:2px;    
+display:flex;
+align-items:center;
+margin-top:8px;
+}
+
+.container .allTodos .todo input{
+-webkit-appearance:none;
+height:17px;
+width:17px;
+border:1px solid grey;
+border-radius:3px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container .allTodos .todo input::before{
+content:"\2714"; 
+font-size:11px;
+color:white;
+visibility:hidden;
+}
+
+.container .allTodos .todo input:checked{
+background:#F9705E;   
+border-color:#F9705E;
+}
+
+.container .allTodos .todo input:checked::before{
+visibility:visible;        
+}
+
+.container .allTodos .item{
+padding:1px;   
+border-bottom:1px solid grey;
+margin-left:12px;
+width:260px;
+}
+
+.container .allTodos .item .task{
+width:230px;
+color:white;
+padding-top:5px;
+padding-bottom:5px;
+font-size:14px;
+}
+
+.container .allTodos .item i{
+position:absolute; 
+right:25px;
+color:grey;
+margin-top:-25px;
+cursor:pointer;
+}
+
+.container .others{
+height:50px;   
+width:100%;
+margin-top:5px;
+display:flex;
+align-items:center;
+margin-top:15px;
+}
+
+.container .others span{
+color:grey; 
+font-size:13px;
+}
+
+.container .others .clear-all-btn{
+all:unset; 
+height:35px;
+width:80px;
+color:white;
+background:#F9705E;
+border-radius:3px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+position:absolute;
+right:25px;
+cursor:pointer;
+}
+
+.container .todo .item .task span.checked{
+text-decoration:line-through;        
+}
+
+.no-task-icon{
+font-size:80px;  
+color:grey;
+margin-left:100px;
+}
+
+::selection{
+color:white;       
+background:#F9705E;
+}
